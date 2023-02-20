@@ -91,14 +91,102 @@
 <!--end of navbar, no touchies from here up-->
 <!--Feed layout options-->
       <div class="container-fluid">
-        <div class="col-2 mx-auto">
-            <button type="button mx-auto" class="btn"><i class="fa-solid fa-square"></i></button>
-            <button type="button mx-auto" class="btn"><i class="fa-solid fa-square"></i></button>
-        </div>
+<!--layout navbar-->
+        <ul class="nav nav-tabs" style="justify-content: center;" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-square"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-table-cells"></i></button>
+            </li>
+          </ul>
+          <div class="tab-content " id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="container">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-xl-3">
+                        <div class="col p-1"><img src="https://fastly.picsum.photos/id/806/350/200.jpg?hmac=cIUXiOsKrIcaJ4Xy2vhTj1QllL7CbDsjEJMc-X9rq2I"></div>
+                        <div class="col p-1"><img src="https://fastly.picsum.photos/id/575/350/200.jpg?hmac=1_X9tRYJQwxcfIc6JoFFB89ty0oR5dZLWU5SC9s5Jsc"></div>
+                        <div class="col p-1"><img src="https://fastly.picsum.photos/id/230/350/200.jpg?hmac=rYOuUXknoCdHgkyX1HwCiz1XLIQijRyO_PT3Zjd_BGQ"></div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-xl-3">
+                            <div class="col p-1"><img src="https://fastly.picsum.photos/id/449/350/200.jpg?hmac=e1okwCGeOYdhwXscG3Mf1zIdN1LNBQtqJwypKRQu0Dg"></div>
+                            <div class="col p-1"><img src="https://fastly.picsum.photos/id/663/350/200.jpg?hmac=YstkMNSILL4xFUpSAU60oxJKMoK08CqNA_1upYfx56c"></div>
+                            <div class="col p-1"><img src="https://fastly.picsum.photos/id/576/350/200.jpg?hmac=f-I7F0KHD0oy-Ec8G-yexx310yWAIVs3PRYqZxXVdYQ"></div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-xl-3">
+                            <div class="col p-1"><img src="https://fastly.picsum.photos/id/862/350/200.jpg?hmac=Nb7sEyIqea2kTScuOfMKHlmX_tehpg3J67936U65QiA"></div>
+                            <div class="col p-1"><img src="https://fastly.picsum.photos/id/74/350/200.jpg?hmac=WoVXomHK-G4u_9TbcUM4aPKt2PbKvpwA961rr4jRluw"></div>
+                            <div class="col p-1"><img src="https://fastly.picsum.photos/id/1002/350/200.jpg?hmac=A-tJfYwnxFezD4qu8w76x_ka52KA_VfcVgTjdQZ6pgE"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="card mb-2 w-50 mx-auto text-bg-light border-light">
+                    <div class="card-header p-0 m-0">
+                        <div class="row">
+                            <div class="col-10">
+                                <p><strong>Worktime!</strong></p> 
+                            </div>
+                            <div class="col-2">
+                                <p class="text-nowrap">
+                                    08/26
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://fastly.picsum.photos/id/534/350/200.jpg?hmac=OgC8HVtolfHCpbTlsLHmpR-ojMGkvl6JoDlskNs6WLM" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text fs-6"><strong>204 Likes</strong></h5>
+                        <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
+                    </div>
+                </div>
+                <div class="card mb-2 w-50 mx-auto text-bg-light border-light">
+                    <div class="card-header p-0 m-0">
+                        <div class="row">
+                            <div class="col-10">
+                                <p><strong>New York! I think...</strong></p> 
+                            </div>
+                            <div class="col-2">
+                                <p class="text-nowrap">
+                                    04/09
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://fastly.picsum.photos/id/737/350/200.jpg?hmac=jXQF665SEzajFmMz4Q38rc55usSPXt-ev5hrth7fEnA" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text"><strong>26985 Likes</strong></h5>
+                        <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
+                    </div>
+                </div>
+                <div class="card mb-2 w-50 mx-auto text-bg-light border-light">
+                    <div class="card-header p-0 m-0">
+                        <div class="row">
+                            <div class="col-10">
+                                <p><strong>Glitchy physics be like:</strong></p> 
+                            </div>
+                            <div class="col-2">
+                                <p class="text-nowrap">
+                                    06/10
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://fastly.picsum.photos/id/629/350/200.jpg?hmac=KD2zSM0gKiE3OKls0eGe2hCdUwu-UzVmpTRFw0QAgi8" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text"><strong>204 Likes</strong></h5>
+                        <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
       </div>
 
 <!--Image Feed Layout-->
-    <div class="container">
+<!---
+<div class="container">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-xl-3">
             <div class="col p-1"><img src="https://fastly.picsum.photos/id/806/350/200.jpg?hmac=cIUXiOsKrIcaJ4Xy2vhTj1QllL7CbDsjEJMc-X9rq2I"></div>
@@ -117,12 +205,13 @@
             </div>
         </div>
     </div>
+--->    
 <!---Javascript code for Bootstrap, no touchies please--->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
 
-Card Design-pre-production
+<!--Card Design
     <div class="card mb-2 w-50 mx-auto text-bg-light border-light">
         <div class="card-header p-0 m-0">
             <div class="row">
@@ -180,4 +269,6 @@ Card Design-pre-production
             <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
         </div>
     </div>
-Card Design-pre-production 
+
+    
+Card Design-->
